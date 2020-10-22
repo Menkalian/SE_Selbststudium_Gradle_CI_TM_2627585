@@ -1,7 +1,8 @@
 plugins {
     id 'java'
-    // Notice: IntelliJ needs the Plugin: https://plugins.jetbrains.com/plugin/6317-lombok. Otherwise the Project compiles, but IntelliJ displays errors (Although there are none).
-    id "io.freefair.lombok" version "5.2.1"
+    // Removed Lombok
+//    // Notice: IntelliJ needs the Plugin: https://plugins.jetbrains.com/plugin/6317-lombok. Otherwise the Project compiles, but IntelliJ displays errors (Although there are none).
+//    id "io.freefair.lombok" version "5.2.1"
 }
 
 group 'de.menkalian'

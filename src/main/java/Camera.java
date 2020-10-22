@@ -1,10 +1,3 @@
-import lombok.AccessLevel;
-import lombok.Data;
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
-import lombok.ToString;
-
 import java.io.File;
 import java.io.IOException;
 import java.net.URISyntaxException;
@@ -12,14 +5,11 @@ import java.time.Instant;
 import java.util.Arrays;
 import java.util.Scanner;
 
-@Getter
-@Setter(AccessLevel.PRIVATE)
-@ToString
+@SuppressWarnings("unused")
 public class Camera implements ICamera {
     private String serialNumber;
     private boolean isOn;
 
-    @Setter(AccessLevel.PUBLIC)
     private MemoryCard memoryCard;
 
     // IRLeds are physically included
@@ -118,11 +108,52 @@ public class Camera implements ICamera {
         isOn = false;
     }
 
-    @Getter
-    @ToString
+    public String getSerialNumber () {
+        return this.serialNumber;
+    }
+
+    private void setSerialNumber (String serialNumber) {
+        this.serialNumber = serialNumber;
+    }
+
+    public boolean isOn () {
+        return this.isOn;
+    }
+
+    private void setOn (boolean isOn) {
+        this.isOn = isOn;
+    }
+
+    public MemoryCard getMemoryCard () {
+        return this.memoryCard;
+    }
+
+    public void setMemoryCard (MemoryCard memoryCard) {
+        this.memoryCard = memoryCard;
+    }
+
+    public IRLed[] getIrLeds () {
+        return this.irLeds;
+    }
+
+    private void setIrLeds (IRLed[] irLeds) {
+        this.irLeds = irLeds;
+    }
+
+    public Chip[] getChips () {
+        return this.chips;
+    }
+
+    private void setChips (Chip[] chips) {
+        this.chips = chips;
+    }
+
+    public String toString () {
+        return "Camera(serialNumber=" + this.getSerialNumber() + ", isOn=" + this.isOn() + ", memoryCard=" + this.getMemoryCard() + ", irLeds=" + Arrays.deepToString(this.getIrLeds()) + ", chips=" + Arrays.deepToString(this.getChips()) + ")";
+    }
+
     private static class Chip {
         private final String uuid;
-        @SuppressWarnings("MismatchedReadAndWriteOfArray")
         private final Core[] cores;
 
         public Chip (String uuid) {
@@ -133,14 +164,60 @@ public class Camera implements ICamera {
             }
         }
 
-        @ToString
+        public String getUuid () {
+            return this.uuid;
+        }
+
+        public Core[] getCores () {
+            return this.cores;
+        }
+
+        public String toString () {
+            return "Camera.Chip(uuid=" + this.getUuid() + ", cores=" + Arrays.deepToString(this.getCores()) + ")";
+        }
+
         private static class Core {
+            public String toString () {
+                return "Camera.Chip.Core()";
+            }
         }
     }
 
-    @Data
-    @NoArgsConstructor
     private static class IRLed {
         private int brightness = 3;
+
+        public IRLed () {
+        }
+
+        public int getBrightness () {
+            return this.brightness;
+        }
+
+        public void setBrightness (int brightness) {
+            this.brightness = brightness;
+        }
+
+        public int hashCode () {
+            final int PRIME = 59;
+            int result = 1;
+            result = result * PRIME + this.getBrightness();
+            return result;
+        }
+
+        public boolean equals (final Object o) {
+            if (o == this) return true;
+            if (!(o instanceof IRLed)) return false;
+            final IRLed other = (IRLed) o;
+            if (!other.canEqual(this)) return false;
+            return this.getBrightness() == other.getBrightness();
+        }
+
+        public String toString () {
+            return "Camera.IRLed(brightness=" + this.getBrightness() + ")";
+        }
+
+        protected boolean canEqual (final Object other) {
+            return other instanceof IRLed;
+        }
     }
 }
