@@ -4,14 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="039543b1-34fc-4763-9795-78b9299966ea" name="Default Changelist" comment="Workspace updated">
-      <change afterPath="$PROJECT_DIR$/Readme.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Camera.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Camera.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/MemoryCard.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MemoryCard.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Picture.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Picture.java" afterDir="false" />
-    </list>
+    <list default="true" id="039543b1-34fc-4763-9795-78b9299966ea" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -37,7 +30,12 @@
         <task path="$PROJECT_DIR$">
           <activation />
         </task>
-        <projects_view />
+        <projects_view>
+          <tree_state>
+            <expand />
+            <select />
+          </tree_state>
+        </projects_view>
       </state>
     </system>
   </component>
@@ -92,6 +90,7 @@
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
   </component>
   <component name="RecentsManager">
@@ -105,7 +104,7 @@
       <recent name="D:\Projects\Java\SE_Selbststudium_Gradle_CI_TM_2627585\src\main\resources" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Gradle.SE_Selbststudium_Gradle_CI_TM_2627585 [test]">
     <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
@@ -136,8 +135,32 @@
       <GradleScriptDebugEnabled>false</GradleScriptDebugEnabled>
       <method v="2" />
     </configuration>
+    <configuration name="SE_Selbststudium_Gradle_CI_TM_2627585 [test]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" value="" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="test" />
+          </list>
+        </option>
+        <option name="vmOptions" value="" />
+      </ExternalSystemSettings>
+      <GradleScriptDebugEnabled>true</GradleScriptDebugEnabled>
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Gradle.CameraTest" />
+      <item itemvalue="Gradle.SE_Selbststudium_Gradle_CI_TM_2627585 [test]" />
+    </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.SE_Selbststudium_Gradle_CI_TM_2627585 [test]" />
         <item itemvalue="Gradle.CameraTest" />
       </list>
     </recent_temporary>
@@ -151,7 +174,7 @@
       <option name="presentableId" value="Default" />
       <updated>1603356734887</updated>
       <workItem from="1603356739392" duration="11083000" />
-      <workItem from="1603370171508" duration="3912000" />
+      <workItem from="1603370171508" duration="4250000" />
     </task>
     <task id="LOCAL-00001" summary="Gradle Setup + .gitignore">
       <created>1603356892077</created>
@@ -195,7 +218,21 @@
       <option name="project" value="LOCAL" />
       <updated>1603382106454</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Readme added, Delomboked">
+      <created>1603382849483</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1603382849483</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Reformated">
+      <created>1603382886819</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1603382886819</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -209,7 +246,9 @@
     <MESSAGE value="Lombok Notice added" />
     <MESSAGE value="Implementation" />
     <MESSAGE value="Tests added" />
-    <option name="LAST_COMMIT_MESSAGE" value="Tests added" />
+    <MESSAGE value="Readme added, Delomboked" />
+    <MESSAGE value="Reformated" />
+    <option name="LAST_COMMIT_MESSAGE" value="Reformated" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
@@ -227,14 +266,14 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="690" y="266" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1603358580598" />
-    <state x="701" y="369" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1603364157858">
+    <state x="701" y="369" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1603382742347">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="701" y="369" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1603364157858" />
-    <state x="472" y="88" key="CommitChangelistDialog2" timestamp="1603382343057">
+    <state x="701" y="369" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1603382742347" />
+    <state x="472" y="88" key="CommitChangelistDialog2" timestamp="1603382885942">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="472" y="88" key="CommitChangelistDialog2/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1603382343057" />
+    <state x="472" y="88" key="CommitChangelistDialog2/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1603382885942" />
     <state x="740" y="237" key="FileChooserDialogImpl" timestamp="1603368566993">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -247,22 +286,22 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="625" y="224" key="Github.UntrackedFilesDialog/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1603356797097" />
-    <state width="1877" height="282" key="GridCell.Tab.0.bottom" timestamp="1603382055825">
+    <state width="1877" height="282" key="GridCell.Tab.0.bottom" timestamp="1603382941059">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.bottom/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1603382055825" />
-    <state width="1877" height="282" key="GridCell.Tab.0.center" timestamp="1603382055825">
+    <state width="1877" height="282" key="GridCell.Tab.0.bottom/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1603382941059" />
+    <state width="1877" height="282" key="GridCell.Tab.0.center" timestamp="1603382941059">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.center/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1603382055825" />
-    <state width="1877" height="282" key="GridCell.Tab.0.left" timestamp="1603382055825">
+    <state width="1877" height="282" key="GridCell.Tab.0.center/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1603382941059" />
+    <state width="1877" height="282" key="GridCell.Tab.0.left" timestamp="1603382941059">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.left/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1603382055825" />
-    <state width="1877" height="282" key="GridCell.Tab.0.right" timestamp="1603382055825">
+    <state width="1877" height="282" key="GridCell.Tab.0.left/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1603382941059" />
+    <state width="1877" height="282" key="GridCell.Tab.0.right" timestamp="1603382941059">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.right/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1603382055825" />
+    <state width="1877" height="282" key="GridCell.Tab.0.right/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1603382941059" />
     <state width="1877" height="348" key="GridCell.Tab.1.bottom" timestamp="1603365886617">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -283,10 +322,14 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="625" y="224" key="NewModule_or_Project.wizard/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1603368576127" />
-    <state x="552" y="252" key="Vcs.Push.Dialog.v2" timestamp="1603382108683">
+    <state x="611" y="222" key="RollbackChangesDialog" timestamp="1603382898053">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="252" key="Vcs.Push.Dialog.v2/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1603382108683" />
+    <state x="611" y="222" key="RollbackChangesDialog/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1603382898053" />
+    <state x="552" y="252" key="Vcs.Push.Dialog.v2" timestamp="1603382888278">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="552" y="252" key="Vcs.Push.Dialog.v2/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1603382888278" />
     <state x="92" y="92" width="1736" height="856" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1603367572124">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
