@@ -1,6 +1,6 @@
 plugins {
     id 'java'
-    // Notice: IntelliJ needs the Plugin: https://plugins.jetbrains.com/plugin/6317-lombok. Otherwise the Project compiles, but IntelliJ displays errors.
+    // Notice: IntelliJ needs the Plugin: https://plugins.jetbrains.com/plugin/6317-lombok. Otherwise the Project compiles, but IntelliJ displays errors (Although there are none).
     id "io.freefair.lombok" version "5.2.1"
 }
 
@@ -13,6 +13,18 @@ repositories {
 
 test {
     useJUnitPlatform()
+    testLogging {
+        events 'PASSED', 'FAILED', 'SKIPPED'
+    }
+    afterSuite { desc, result ->
+        if (!desc.parent) {
+            println "\nTest result: ${result.resultType}"
+            println "Test summary: ${result.testCount} tests completed, " +
+                    "${result.successfulTestCount} succeeded, " +
+                    "${result.failedTestCount} failed, " +
+                    "${result.skippedTestCount} skipped"
+        }
+    }
 }
 
 dependencies {

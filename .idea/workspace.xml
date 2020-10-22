@@ -5,14 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="039543b1-34fc-4763-9795-78b9299966ea" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/lombok.config" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/CameraTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/TestUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/resources/expected.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Builder.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Builder.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Camera.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Camera.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Picture.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Picture.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/CameraTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/CameraTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/TestUtils.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/TestUtils.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,6 +53,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="Menkalian &lt;kilian@krampf.de&gt;" />
+      </list>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="KotlinMultiplatform">
@@ -80,6 +85,7 @@
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit5" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5" value="" />
+    <property name="last.edited.regexp" value="1 | 12561" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/resources" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -87,6 +93,7 @@
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
   </component>
   <component name="RecentsManager">
     <key name="CreateTestDialog.RecentsKey">
@@ -100,17 +107,6 @@
     </key>
   </component>
   <component name="RunManager">
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="CameraTest" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -144,7 +140,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1603356734887</updated>
-      <workItem from="1603356739392" duration="7242000" />
+      <workItem from="1603356739392" duration="11083000" />
+      <workItem from="1603370171508" duration="3401000" />
     </task>
     <task id="LOCAL-00001" summary="Gradle Setup + .gitignore">
       <created>1603356892077</created>
@@ -174,24 +171,36 @@
       <option name="project" value="LOCAL" />
       <updated>1603358799055</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Implementation">
+      <created>1603364090018</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1603364090018</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
     <MESSAGE value="Gradle Setup + .gitignore" />
     <MESSAGE value="IntelliJ-Settings" />
     <MESSAGE value="Methoden definiert, Daten hinzugefügt" />
     <MESSAGE value="Lombok Notice added" />
-    <option name="LAST_COMMIT_MESSAGE" value="Lombok Notice added" />
+    <MESSAGE value="Implementation" />
+    <option name="LAST_COMMIT_MESSAGE" value="Implementation" />
+    <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
+    <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
+    <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="414" y="174" width="1092" height="715" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1603363836274">
+    <state x="414" y="174" width="1092" height="739" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1603381767948">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="414" y="174" width="1092" height="715" key="#com.intellij.execution.impl.EditConfigurationsDialog/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1603363836274" />
+    <state x="414" y="174" width="1092" height="739" key="#com.intellij.execution.impl.EditConfigurationsDialog/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1603381767948" />
     <state x="887" y="201" key="#com.intellij.ide.util.MemberChooser" timestamp="1603363150773">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -200,10 +209,18 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="690" y="266" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1603358580598" />
-    <state x="472" y="88" key="CommitChangelistDialog2" timestamp="1603358798278">
+    <state x="701" y="369" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1603364157858">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="472" y="88" key="CommitChangelistDialog2/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1603358798278" />
+    <state x="701" y="369" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1603364157858" />
+    <state x="472" y="88" key="CommitChangelistDialog2" timestamp="1603364088786">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="472" y="88" key="CommitChangelistDialog2/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1603364088786" />
+    <state x="740" y="237" key="FileChooserDialogImpl" timestamp="1603368566993">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="740" y="237" key="FileChooserDialogImpl/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1603368566993" />
     <state x="757" y="417" key="Github.ShareDialog" timestamp="1603356787195">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -212,42 +229,50 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="625" y="224" key="Github.UntrackedFilesDialog/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1603356797097" />
-    <state width="1877" height="282" key="GridCell.Tab.0.bottom" timestamp="1603364008557">
+    <state width="1877" height="282" key="GridCell.Tab.0.bottom" timestamp="1603382055825">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.bottom/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1603364008557" />
-    <state width="1877" height="282" key="GridCell.Tab.0.center" timestamp="1603364008556">
+    <state width="1877" height="282" key="GridCell.Tab.0.bottom/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1603382055825" />
+    <state width="1877" height="282" key="GridCell.Tab.0.center" timestamp="1603382055825">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.center/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1603364008556" />
-    <state width="1877" height="282" key="GridCell.Tab.0.left" timestamp="1603364008556">
+    <state width="1877" height="282" key="GridCell.Tab.0.center/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1603382055825" />
+    <state width="1877" height="282" key="GridCell.Tab.0.left" timestamp="1603382055825">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.left/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1603364008556" />
-    <state width="1877" height="282" key="GridCell.Tab.0.right" timestamp="1603364008557">
+    <state width="1877" height="282" key="GridCell.Tab.0.left/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1603382055825" />
+    <state width="1877" height="282" key="GridCell.Tab.0.right" timestamp="1603382055825">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="282" key="GridCell.Tab.0.right/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1603364008557" />
-    <state width="1877" height="348" key="GridCell.Tab.1.bottom" timestamp="1603362363003">
+    <state width="1877" height="282" key="GridCell.Tab.0.right/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1603382055825" />
+    <state width="1877" height="348" key="GridCell.Tab.1.bottom" timestamp="1603365886617">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="348" key="GridCell.Tab.1.bottom/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1603362363003" />
-    <state width="1877" height="348" key="GridCell.Tab.1.center" timestamp="1603362363003">
+    <state width="1877" height="348" key="GridCell.Tab.1.bottom/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1603365886617" />
+    <state width="1877" height="348" key="GridCell.Tab.1.center" timestamp="1603365886616">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="348" key="GridCell.Tab.1.center/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1603362363003" />
-    <state width="1877" height="348" key="GridCell.Tab.1.left" timestamp="1603362363003">
+    <state width="1877" height="348" key="GridCell.Tab.1.center/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1603365886616" />
+    <state width="1877" height="348" key="GridCell.Tab.1.left" timestamp="1603365886616">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="348" key="GridCell.Tab.1.left/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1603362363003" />
-    <state width="1877" height="348" key="GridCell.Tab.1.right" timestamp="1603362363003">
+    <state width="1877" height="348" key="GridCell.Tab.1.left/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1603365886616" />
+    <state width="1877" height="348" key="GridCell.Tab.1.right" timestamp="1603365886616">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1877" height="348" key="GridCell.Tab.1.right/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1603362363003" />
-    <state x="552" y="252" key="Vcs.Push.Dialog.v2" timestamp="1603358800737">
+    <state width="1877" height="348" key="GridCell.Tab.1.right/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1603365886616" />
+    <state x="625" y="224" key="NewModule_or_Project.wizard" timestamp="1603368576127">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="552" y="252" key="Vcs.Push.Dialog.v2/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1603358800737" />
+    <state x="625" y="224" key="NewModule_or_Project.wizard/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1603368576127" />
+    <state x="552" y="252" key="Vcs.Push.Dialog.v2" timestamp="1603364093498">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="552" y="252" key="Vcs.Push.Dialog.v2/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1603364093498" />
+    <state x="92" y="92" width="1736" height="856" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1603367572124">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="92" y="92" width="1736" height="856" key="com.intellij.history.integration.ui.views.FileHistoryDialog/1920.0.1920.1040/0.0.1920.1040@0.0.1920.1040" timestamp="1603367572124" />
     <state x="724" y="203" key="com.intellij.testIntegration.createTest.CreateTestDialog" timestamp="1603358986097">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>

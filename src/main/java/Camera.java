@@ -3,10 +3,11 @@ import lombok.Data;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
-import lombok.SneakyThrows;
 import lombok.ToString;
 
 import java.io.File;
+import java.io.IOException;
+import java.net.URISyntaxException;
 import java.time.Instant;
 import java.util.Arrays;
 import java.util.Scanner;
@@ -27,7 +28,6 @@ public class Camera implements ICamera {
     // Chips are physically included
     private Chip[] chips;
 
-
     public Camera (String serialNumber, MemoryCard memoryCard, String[] chipsUuids) {
         this.serialNumber = serialNumber;
         this.memoryCard = memoryCard;
@@ -47,26 +47,35 @@ public class Camera implements ICamera {
         isOn = true;
     }
 
-    @SneakyThrows
     @Override
     public char[][] getRawFacePicture (int faceID) {
-        File faceFile = new File(this.getClass().getResource("face" + faceID + ".txt").toURI());
-        Scanner faceReader = new Scanner(faceFile);
-        char[][] faceData = new char[21][14];
-
-        int row = 0;
-        int column = 0;
-
-        while (faceReader.hasNext()) {
-            String read = (faceReader.nextLine());
-            for (char c : read.toCharArray()) {
-                faceData[row][column] = c;
-                column++;
+        try {
+            File faceFile;
+            if (faceID < 10) {
+                faceFile = new File(this.getClass().getResource("face0" + faceID + ".txt").toURI());
+            } else {
+                faceFile = new File(this.getClass().getResource("face" + faceID + ".txt").toURI());
             }
-            row++;
-            column = 0;
+            Scanner faceReader = new Scanner(faceFile);
+            char[][] faceData = new char[21][14];
+
+            int row = 0;
+            int column = 0;
+
+            while (faceReader.hasNext()) {
+                String read = (faceReader.nextLine());
+                for (char c : read.toCharArray()) {
+                    faceData[row][column] = c;
+                    column++;
+                }
+                row++;
+                column = 0;
+            }
+            return faceData;
+        } catch (IOException | URISyntaxException e) {
+            e.printStackTrace();
+            return new char[21][14];
         }
-        return faceData;
     }
 
     @Override
